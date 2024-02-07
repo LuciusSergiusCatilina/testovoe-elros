@@ -1,0 +1,10 @@
+.spoiler-title {
+	cursor: pointer;
+  }
+  
+.spoiler-content {
+	display: none;
+  }
+.spoiler-body {
+    display: none;
+}
