@@ -2,9 +2,9 @@
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 $APPLICATION->SetTitle("Главная");
 ?><?$APPLICATION->IncludeComponent(
-	"bitrix:news.list",
-	"test",
-	Array(
+	"bitrix:news.list", 
+	"test", 
+	array(
 		"ACTIVE_DATE_FORMAT" => "d.m.Y",
 		"ADD_SECTIONS_CHAIN" => "Y",
 		"AJAX_MODE" => "N",
@@ -15,7 +15,7 @@ $APPLICATION->SetTitle("Главная");
 		"CACHE_FILTER" => "N",
 		"CACHE_GROUPS" => "Y",
 		"CACHE_TIME" => "36000000",
-		"CACHE_TYPE" => "A",
+		"CACHE_TYPE" => "N",
 		"CHECK_DATES" => "Y",
 		"COMPONENT_TEMPLATE" => "test",
 		"DETAIL_URL" => "",
@@ -25,7 +25,10 @@ $APPLICATION->SetTitle("Главная");
 		"DISPLAY_PICTURE" => "Y",
 		"DISPLAY_PREVIEW_TEXT" => "Y",
 		"DISPLAY_TOP_PAGER" => "N",
-		"FIELD_CODE" => array(0=>"",1=>"",),
+		"FIELD_CODE" => array(
+			0 => "",
+			1 => "",
+		),
 		"FILTER_NAME" => "",
 		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
 		"IBLOCK_ID" => "1",
@@ -44,7 +47,11 @@ $APPLICATION->SetTitle("Главная");
 		"PARENT_SECTION" => "",
 		"PARENT_SECTION_CODE" => "",
 		"PREVIEW_TRUNCATE_LEN" => "",
-		"PROPERTY_CODE" => array(0=>"CITY",1=>"TYPE",2=>"",),
+		"PROPERTY_CODE" => array(
+			0 => "CITY",
+			1 => "TYPE",
+			2 => "",
+		),
 		"SET_BROWSER_TITLE" => "Y",
 		"SET_LAST_MODIFIED" => "N",
 		"SET_META_DESCRIPTION" => "Y",
@@ -57,7 +64,8 @@ $APPLICATION->SetTitle("Главная");
 		"SORT_ORDER1" => "DESC",
 		"SORT_ORDER2" => "ASC",
 		"STRICT_SECTION_CHECK" => "N"
-	)
+	),
+	false
 );?><?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/footer.php');
 ?>
